@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9ki-cB-Bqi">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Konut Kredisi-->
+        <scene sceneID="M76-MW-OaL">
+            <objects>
+                <viewController id="qyc-La-1DV" customClass="HouseCreditViewController" customModule="Emir_s_Interest_Rates_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TLj-AH-PRC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="25X-Ek-XiM">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="houseCell" rowHeight="189" id="UD8-XR-zBe" customClass="HouseCustomTableViewCell" customModule="Emir_s_Interest_Rates_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="189"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UD8-XR-zBe" id="QOT-ae-e8I">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="189"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banka:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96u-Tz-0Az">
+                                                    <rect key="frame" x="20" y="11" width="353" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="8Gd-BH-S2c"/>
+                                                        <constraint firstAttribute="width" constant="353" id="ouJ-iX-bDG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kredi:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqt-ei-Rwu">
+                                                    <rect key="frame" x="20" y="45" width="353" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="353" id="EYm-cg-eQb"/>
+                                                        <constraint firstAttribute="height" constant="22" id="tWd-Da-qc0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faiz Oranı:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch2-gv-RrC">
+                                                    <rect key="frame" x="20" y="79" width="353" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="0gs-Ki-Bat"/>
+                                                        <constraint firstAttribute="width" constant="353" id="Ek9-Qr-jDZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum Vade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fiw-hf-Xph">
+                                                    <rect key="frame" x="20" y="113" width="353" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="353" id="MhV-k4-01x"/>
+                                                        <constraint firstAttribute="height" constant="22" id="S5x-Bh-F1A"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maksimum Vade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO6-aV-rQp">
+                                                    <rect key="frame" x="20" y="148" width="353" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="353" id="JOm-Zd-4EP"/>
+                                                        <constraint firstAttribute="height" constant="16" id="SLm-6c-ne7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Wqt-ei-Rwu" firstAttribute="leading" secondItem="ch2-gv-RrC" secondAttribute="leading" id="92B-Pa-kiP"/>
+                                                <constraint firstItem="ch2-gv-RrC" firstAttribute="trailing" secondItem="Fiw-hf-Xph" secondAttribute="trailing" id="Anx-m5-ibQ"/>
+                                                <constraint firstItem="Wqt-ei-Rwu" firstAttribute="trailing" secondItem="ch2-gv-RrC" secondAttribute="trailing" id="GLK-Zn-O2t"/>
+                                                <constraint firstItem="96u-Tz-0Az" firstAttribute="top" secondItem="QOT-ae-e8I" secondAttribute="topMargin" id="HHa-Sq-3Jt"/>
+                                                <constraint firstItem="96u-Tz-0Az" firstAttribute="leading" secondItem="QOT-ae-e8I" secondAttribute="leadingMargin" id="SMS-EG-rbb"/>
+                                                <constraint firstItem="Fiw-hf-Xph" firstAttribute="trailing" secondItem="MO6-aV-rQp" secondAttribute="trailing" id="U7q-k8-lhE"/>
+                                                <constraint firstItem="96u-Tz-0Az" firstAttribute="leading" secondItem="Wqt-ei-Rwu" secondAttribute="leading" id="ZlC-zJ-1ek"/>
+                                                <constraint firstItem="MO6-aV-rQp" firstAttribute="top" secondItem="Fiw-hf-Xph" secondAttribute="bottom" constant="12" id="bQd-f6-p89"/>
+                                                <constraint firstItem="Fiw-hf-Xph" firstAttribute="leading" secondItem="MO6-aV-rQp" secondAttribute="leading" id="dUw-AH-fGy"/>
+                                                <constraint firstItem="96u-Tz-0Az" firstAttribute="trailing" secondItem="Wqt-ei-Rwu" secondAttribute="trailing" id="gxK-Vh-zNk"/>
+                                                <constraint firstItem="Wqt-ei-Rwu" firstAttribute="top" secondItem="96u-Tz-0Az" secondAttribute="bottom" constant="12" id="hj3-Wd-DSL"/>
+                                                <constraint firstItem="ch2-gv-RrC" firstAttribute="leading" secondItem="Fiw-hf-Xph" secondAttribute="leading" id="jbD-Lx-Syb"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="MO6-aV-rQp" secondAttribute="bottom" constant="14" id="uR3-sq-LBW"/>
+                                                <constraint firstItem="Fiw-hf-Xph" firstAttribute="top" secondItem="ch2-gv-RrC" secondAttribute="bottom" constant="12" id="y7a-4T-WWn"/>
+                                                <constraint firstItem="ch2-gv-RrC" firstAttribute="top" secondItem="Wqt-ei-Rwu" secondAttribute="bottom" constant="12" id="yua-8I-uyR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bankNameLabel" destination="96u-Tz-0Az" id="Uwn-Jb-rVa"/>
+                                            <outlet property="creditNameLabel" destination="Wqt-ei-Rwu" id="1mk-B9-Njs"/>
+                                            <outlet property="interestRateLabel" destination="ch2-gv-RrC" id="jrx-72-Csx"/>
+                                            <outlet property="maxDueLabel" destination="MO6-aV-rQp" id="lqf-mt-3fn"/>
+                                            <outlet property="minDueLabel" destination="Fiw-hf-Xph" id="X1A-35-4q4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Zp-P6-qQl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="25X-Ek-XiM" firstAttribute="leading" secondItem="4Zp-P6-qQl" secondAttribute="leading" id="0dT-zQ-Lh0"/>
+                            <constraint firstItem="25X-Ek-XiM" firstAttribute="bottom" secondItem="4Zp-P6-qQl" secondAttribute="bottom" id="BD2-oP-AzU"/>
+                            <constraint firstItem="25X-Ek-XiM" firstAttribute="top" secondItem="4Zp-P6-qQl" secondAttribute="top" id="g1H-0N-Wgf"/>
+                            <constraint firstItem="25X-Ek-XiM" firstAttribute="centerX" secondItem="TLj-AH-PRC" secondAttribute="centerX" id="qqW-d7-w9c"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Konut Kredisi" id="8qt-h0-mKo">
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="25X-Ek-XiM" id="bHo-Dv-e7O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDW-nA-524" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1397.709923664122" y="-698.59154929577471"/>
+        </scene>
+        <!--Taşıt Kredisi-->
+        <scene sceneID="Hdt-eT-04A">
+            <objects>
+                <viewController id="QCf-o7-uvt" customClass="VehicleCreditViewController" customModule="Emir_s_Interest_Rates_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jic-dV-gIp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rt5-vG-5Jw">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="vehicleCell" rowHeight="192" id="ITx-Yh-Hg7" customClass="VehicleCustomTableViewCell" customModule="Emir_s_Interest_Rates_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="192"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ITx-Yh-Hg7" id="zYp-lr-BMB">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="192"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banka: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6W-bi-hyF">
+                                                    <rect key="frame" x="20" y="17" width="353" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="353" id="qHG-F5-zhd"/>
+                                                        <constraint firstAttribute="height" constant="21" id="qXo-0q-guR"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kredi:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2i-dj-RjQ">
+                                                    <rect key="frame" x="20" y="51" width="353" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Sab-Iz-Rfp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Faiz Oranı: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pU8-0J-eGV">
+                                                    <rect key="frame" x="20" y="85" width="353" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maksimum Vade: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHh-3B-U9c">
+                                                    <rect key="frame" x="20" y="153" width="353" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="fL3-T0-njg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Minimum Vade: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6A-Jt-EF0">
+                                                    <rect key="frame" x="20" y="119" width="353" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pU8-0J-eGV" firstAttribute="top" secondItem="Y2i-dj-RjQ" secondAttribute="bottom" constant="13" id="3O6-Yq-qiq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FHh-3B-U9c" secondAttribute="bottom" constant="7" id="4c5-pb-PA2"/>
+                                                <constraint firstItem="h6W-bi-hyF" firstAttribute="trailing" secondItem="Y2i-dj-RjQ" secondAttribute="trailing" id="54G-Gg-yKl"/>
+                                                <constraint firstItem="pU8-0J-eGV" firstAttribute="centerY" secondItem="zYp-lr-BMB" secondAttribute="centerY" id="8c2-Na-i4h"/>
+                                                <constraint firstItem="h6W-bi-hyF" firstAttribute="leading" secondItem="Y2i-dj-RjQ" secondAttribute="leading" id="DzL-tf-dEX"/>
+                                                <constraint firstItem="pU8-0J-eGV" firstAttribute="trailing" secondItem="f6A-Jt-EF0" secondAttribute="trailing" id="Hud-zk-Exo"/>
+                                                <constraint firstItem="f6A-Jt-EF0" firstAttribute="leading" secondItem="FHh-3B-U9c" secondAttribute="leading" id="Jxf-Lf-38F"/>
+                                                <constraint firstItem="FHh-3B-U9c" firstAttribute="top" secondItem="f6A-Jt-EF0" secondAttribute="bottom" constant="13" id="NhR-LA-TAO"/>
+                                                <constraint firstItem="f6A-Jt-EF0" firstAttribute="top" secondItem="pU8-0J-eGV" secondAttribute="bottom" constant="13" id="QUa-QT-HBM"/>
+                                                <constraint firstItem="Y2i-dj-RjQ" firstAttribute="leading" secondItem="pU8-0J-eGV" secondAttribute="leading" id="WNg-kk-kWb"/>
+                                                <constraint firstItem="h6W-bi-hyF" firstAttribute="top" secondItem="zYp-lr-BMB" secondAttribute="topMargin" constant="6" id="YWo-xV-9rL"/>
+                                                <constraint firstItem="Y2i-dj-RjQ" firstAttribute="top" secondItem="h6W-bi-hyF" secondAttribute="bottom" constant="13" id="aUh-wE-saz"/>
+                                                <constraint firstItem="f6A-Jt-EF0" firstAttribute="trailing" secondItem="FHh-3B-U9c" secondAttribute="trailing" id="aXZ-i9-049"/>
+                                                <constraint firstItem="pU8-0J-eGV" firstAttribute="leading" secondItem="f6A-Jt-EF0" secondAttribute="leading" id="bHf-pz-OBq"/>
+                                                <constraint firstItem="h6W-bi-hyF" firstAttribute="leading" secondItem="zYp-lr-BMB" secondAttribute="leadingMargin" id="eNm-mx-6FI"/>
+                                                <constraint firstItem="Y2i-dj-RjQ" firstAttribute="trailing" secondItem="pU8-0J-eGV" secondAttribute="trailing" id="u9E-in-8eM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bankNameLabel" destination="h6W-bi-hyF" id="blp-qE-QhG"/>
+                                            <outlet property="creditNameLabel" destination="Y2i-dj-RjQ" id="jUd-SH-PwI"/>
+                                            <outlet property="interestRateLabel" destination="pU8-0J-eGV" id="cy7-H9-g4p"/>
+                                            <outlet property="maxDueLabel" destination="FHh-3B-U9c" id="3Mw-hr-17y"/>
+                                            <outlet property="minDueLabel" destination="f6A-Jt-EF0" id="a8Y-aD-9na"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0sM-L5-QIT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rt5-vG-5Jw" firstAttribute="top" secondItem="0sM-L5-QIT" secondAttribute="top" id="1ZU-Sz-uGf"/>
+                            <constraint firstItem="rt5-vG-5Jw" firstAttribute="centerX" secondItem="jic-dV-gIp" secondAttribute="centerX" id="CW3-pv-il3"/>
+                            <constraint firstItem="rt5-vG-5Jw" firstAttribute="bottom" secondItem="0sM-L5-QIT" secondAttribute="bottom" id="Zgt-1l-O4R"/>
+                            <constraint firstItem="rt5-vG-5Jw" firstAttribute="leading" secondItem="0sM-L5-QIT" secondAttribute="leading" id="z0A-G6-zfm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Taşıt Kredisi" id="7rI-rj-xdb">
+                        <imageReference key="image" image="car.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="rt5-vG-5Jw" id="noK-xZ-TP5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lvh-xV-JNw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1397.709923664122" y="-26.056338028169016"/>
+        </scene>
+        <!--İhtiyaç Kredisi-->
+        <scene sceneID="Rhr-SU-JSf">
+            <objects>
+                <viewController id="omo-R8-uxK" customClass="PersonalCreditViewController" customModule="Emir_s_Interest_Rates_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Phf-OA-9gc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sRj-l9-3CN">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="personalCell" rowHeight="198" id="131-iG-itd" customClass="PersonalCustomTableViewCell" customModule="Emir_s_Interest_Rates_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="198"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="131-iG-itd" id="vd5-5C-ewF">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="198"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banka:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8s-so-Peg">
+                                                    <rect key="frame" x="20" y="20.666666666666668" width="353" height="21.000000000000004"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="353" id="2Fl-KW-RYW"/>
+                                                        <constraint firstAttribute="height" constant="21.000000000000004" id="u5A-TI-mHX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kredi:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7J-rm-XCZ">
+                                                    <rect key="frame" x="20" y="54.666666666666657" width="353" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="CST-eC-AV6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faiz Oranı:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jf-gf-96x">
+                                                    <rect key="frame" x="20" y="88.666666666666671" width="353" height="20.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum Vade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Du0-4r-jlZ">
+                                                    <rect key="frame" x="20" y="122.33333333333331" width="353" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="1VW-Ti-2Wu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maksimum Vade:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ce5-6D-Zey">
+                                                    <rect key="frame" x="20" y="156.33333333333334" width="353" height="21.333333333333343"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="H8s-so-Peg" firstAttribute="leading" secondItem="I7J-rm-XCZ" secondAttribute="leading" id="206-58-c7i"/>
+                                                <constraint firstItem="Du0-4r-jlZ" firstAttribute="top" secondItem="6jf-gf-96x" secondAttribute="bottom" constant="13.000000000000014" id="2YO-RQ-IHL"/>
+                                                <constraint firstItem="I7J-rm-XCZ" firstAttribute="top" secondItem="H8s-so-Peg" secondAttribute="bottom" constant="12.999999999999986" id="EuR-wo-wlM"/>
+                                                <constraint firstItem="6jf-gf-96x" firstAttribute="leading" secondItem="Du0-4r-jlZ" secondAttribute="leading" id="H3W-TO-bPK"/>
+                                                <constraint firstItem="6jf-gf-96x" firstAttribute="centerY" secondItem="vd5-5C-ewF" secondAttribute="centerY" id="UvI-Cl-4eW"/>
+                                                <constraint firstItem="Ce5-6D-Zey" firstAttribute="top" secondItem="Du0-4r-jlZ" secondAttribute="bottom" constant="12.999999999999972" id="WKj-SY-VKN"/>
+                                                <constraint firstItem="H8s-so-Peg" firstAttribute="leading" secondItem="vd5-5C-ewF" secondAttribute="leadingMargin" id="Xav-IN-sfx"/>
+                                                <constraint firstItem="H8s-so-Peg" firstAttribute="top" secondItem="vd5-5C-ewF" secondAttribute="topMargin" constant="9.6666666666666714" id="Z3C-Kj-eOl"/>
+                                                <constraint firstItem="6jf-gf-96x" firstAttribute="top" secondItem="I7J-rm-XCZ" secondAttribute="bottom" constant="13.000000000000014" id="cM2-jf-MvN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ce5-6D-Zey" secondAttribute="bottom" constant="9.3333333333333428" id="dhd-qs-l6t"/>
+                                                <constraint firstItem="H8s-so-Peg" firstAttribute="trailing" secondItem="I7J-rm-XCZ" secondAttribute="trailing" id="kVD-Ne-KhJ"/>
+                                                <constraint firstItem="Du0-4r-jlZ" firstAttribute="trailing" secondItem="Ce5-6D-Zey" secondAttribute="trailing" id="mW9-uH-Lnq"/>
+                                                <constraint firstItem="I7J-rm-XCZ" firstAttribute="trailing" secondItem="6jf-gf-96x" secondAttribute="trailing" id="oA2-cR-B61"/>
+                                                <constraint firstItem="I7J-rm-XCZ" firstAttribute="leading" secondItem="6jf-gf-96x" secondAttribute="leading" id="qAb-zf-BdG"/>
+                                                <constraint firstItem="6jf-gf-96x" firstAttribute="trailing" secondItem="Du0-4r-jlZ" secondAttribute="trailing" id="wSJ-bu-sgt"/>
+                                                <constraint firstItem="Du0-4r-jlZ" firstAttribute="leading" secondItem="Ce5-6D-Zey" secondAttribute="leading" id="xx3-AR-NLi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bankNameLabel" destination="H8s-so-Peg" id="6l2-JW-eQo"/>
+                                            <outlet property="creditNameLabel" destination="I7J-rm-XCZ" id="VLr-fO-5Td"/>
+                                            <outlet property="interestRateLabel" destination="6jf-gf-96x" id="lez-E4-8yG"/>
+                                            <outlet property="maxDueLabel" destination="Ce5-6D-Zey" id="KN3-yx-tHa"/>
+                                            <outlet property="minDueLabel" destination="Du0-4r-jlZ" id="BC6-IU-Qyp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Fu-c9-Ev8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sRj-l9-3CN" firstAttribute="leading" secondItem="5Fu-c9-Ev8" secondAttribute="leading" id="CpM-L7-jgX"/>
+                            <constraint firstItem="sRj-l9-3CN" firstAttribute="bottom" secondItem="5Fu-c9-Ev8" secondAttribute="bottom" id="KkA-bh-Isd"/>
+                            <constraint firstItem="sRj-l9-3CN" firstAttribute="centerX" secondItem="Phf-OA-9gc" secondAttribute="centerX" id="QfM-IZ-xNa"/>
+                            <constraint firstItem="sRj-l9-3CN" firstAttribute="top" secondItem="5Fu-c9-Ev8" secondAttribute="top" id="RUt-Uc-sgB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="İhtiyaç Kredisi" id="MIQ-Mi-yqk">
+                        <imageReference key="image" image="creditcard.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="sRj-l9-3CN" id="9vC-EF-xFW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WFv-pJ-ozC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356.4885496183206" y="697.18309859154931"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xcz-KD-rZo">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9ki-cB-Bqi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s8w-z8-RCX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QCf-o7-uvt" kind="relationship" relationship="viewControllers" id="pQj-Q9-umM"/>
+                        <segue destination="qyc-La-1DV" kind="relationship" relationship="viewControllers" id="wyo-YF-IIN"/>
+                        <segue destination="omo-R8-uxK" kind="relationship" relationship="viewControllers" id="eq8-6G-jnO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5Y-HO-xSI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="-26"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car.fill" catalog="system" width="128" height="95"/>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

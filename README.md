@@ -2,7 +2,7 @@
 #### I have developed an application where people can see the offers of banks for the type of loan they want.
 
 ##### Design Pattern: MVC
-##### Used Technologies: Alamofire
+##### Used Technologies: Alamofire, UIKit
 
 
 ## Iphone 14 Pro
